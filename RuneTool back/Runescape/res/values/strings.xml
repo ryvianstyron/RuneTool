@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, HomeActivity!</string>
+    <string name="app_name">Rune Tool</string>
+    <string name="alogButton">Adventurers Log</string>
+    <string name="username">Friends</string>
+    <string name="homeButton">Home</string>
+    <string name="title">Title</string>
+    <string name="description">Description</string>
+    <string name="text1">Title</string>
+    <string name="text2">Description</string>
+    <string name="friendsButton">Friends</string>
+    <string name="newsButton">News!</string>
+    <string name="timeButton">Forum Time</string>
+    <string name="hiScoresButton">High Scores</string>
+</resources>

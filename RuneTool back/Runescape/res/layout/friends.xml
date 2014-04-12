@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bluefire">
+		<LinearLayout
+			android:layout_marginTop="35dip"
+			android:layout_width="200dip"
+			android:layout_height ="fill_parent"
+			android:layout_gravity="center_horizontal"
+			android:orientation="vertical">
+			<Button
+				android:id="@+id/friendButton"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:text="Friends"
+				android:background="@drawable/home_button_normal"
+				android:textColor="@color/white"/>
+			<ListView 
+  				android:id="@id/android:list"
+    			android:layout_width="fill_parent"
+    			android:layout_height="fill_parent"
+    			android:layout_weight="2"
+    			android:listSelector="@drawable/clicked"
+    			android:drawSelectorOnTop="true">
+  			</ListView>
+   			<LinearLayout
+   			    android:id="@id/android:empty"
+   			    android:orientation="horizontal"
+   			    android:layout_gravity="center_horizontal"
+   			    android:layout_height="wrap_content"
+   			    android:layout_width="wrap_content">
+   			    <Button
+   			        android:id="@+id/addfriendbutton"
+	    			android:layout_width="50dp"
+	    			android:layout_height="50dp"
+	    			android:background="@drawable/addfriendbutton"
+	    			android:layout_gravity="center_horizontal"/>
+   			    <TextView
+   			        android:layout_width="wrap_content"
+	    			android:layout_height="wrap_content"
+	    			android:text="Add Friend"
+	    			android:layout_gravity="center_vertical"
+	    			android:layout_marginLeft="10dp"/>
+    		</LinearLayout>
+		</LinearLayout>
+</LinearLayout>

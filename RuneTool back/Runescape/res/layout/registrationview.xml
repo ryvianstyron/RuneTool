@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bluefire"
+    android:orientation="vertical"
+    android:id="@+id/everything"
+    android:visibility="gone">
+
+    <ImageView
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/runescapetitle" />
+
+    <LinearLayout
+        android:id="@+id/accountButtons"
+        android:layout_width="200dip"
+        android:layout_height="fill_parent"
+        android:gravity="center_vertical"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical" >
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Select Account Type:" 
+            android:textSize="17dip"/>
+        <Button
+            android:id="@+id/free2play"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/homebuttons"
+            android:text="Free"
+            android:textColor="@color/white"
+            android:textSize="15dip" />
+        <Button
+            android:id="@+id/pay2play"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/homebuttons"
+            android:text="Membership"
+            android:textColor="@color/white"
+            android:textSize="15dip" />
+        </LinearLayout>
+        
+    <LinearLayout
+     	android:visibility="gone"
+        android:id="@+id/memberTextField"
+        android:layout_width="230dip"
+        android:layout_height="fill_parent"
+        android:gravity="center_vertical"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical" >
+   <EditText
+       android:id="@+id/memberEditText"
+       android:layout_width="fill_parent"
+       android:gravity="center|center_horizontal"
+       android:layout_height="wrap_content"
+       android:background="@drawable/buttonback2"
+       android:hint="Enter Member Name"
+       android:textColorHint="#FFFFFF"
+       android:textColor="@color/white"
+       android:textSize="15dp"/>
+   <Button
+       		android:layout_marginTop="4dp"
+            android:id="@+id/memberButton"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity= "center_horizontal"
+            android:background="@drawable/homebuttons"
+            android:text="Register"
+            android:textColor="@color/white"
+            android:textSize="15dip" />
+    </LinearLayout>
+        
+    
+</LinearLayout>

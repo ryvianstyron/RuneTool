@@ -1,0 +1,102 @@
+Test cases:
+
+Internet Checks:
+1. Open app with no net. Are you notified?
+
+2. Open free login type with no net. Are you notified? no
+
+3. Sign in as a member with no net. Are you notified?
+	3.1 Cut net on the following pages.
+		Home.
+		Load News, Alog or HiScores - Are you notified of no net?
+Tutorial Check:
+	4.1 Does Tutorial dialog pop up correctly?
+	4.2 Does tutorial dialog exit correctly?
+
+Share Button Check:
+	5.1 Does Share button work in all available categories? 
+		Facebook will just share an image
+		Emails will share image + text
+		Twitter will share image + text
+		Messaging will share just an image
+		Viber will share just an image
+	
+News Check:
+	6.0 Is it the correct loading dialog?
+	6.1 Does news load correctly? Write down the news login hour at this point.
+	6.1.1 Press back and open news again. Does it load from cache?
+
+	6.2 Does a news item load correctly?
+	6.3 Does more info load correctly?
+	6.4 Change phone time to 3 hours past login hour and open news again. Does it reload (with loading screen)?
+		If yes, change phone time back to normal.
+	6.5 Press the menu button in the news page. Does it resync correctly? Write down the news login hour at this point.
+		Repeat 6.4
+
+Adventurer's Log Check:
+	7.0 Is it the correct loading dialog?
+	7.1 Does Alog load correctly? Write down the alog login hour at this point.
+	7.1.1 Press back and open alog again. Does it load from cache?
+
+	7.2 Does a alog item load correctly?
+	7.3 Change phone time to 3 hours past login hour and open alog again. Does it reload (with loading screen)?
+		If yes, change phone time back to normal.
+	7.4 Press the menu button in the alog page. Does it resync correctly? Write down the news login hour at this point.
+		Repeat 7.3
+
+HiScores's Check:
+	8.0 Is it the correct loading dialog?
+	8.1 Does HiScores load correctly? Write down the HiScores login hour at this point.
+	8.1.1 Press back and open hiScores again. Does it load from cache?
+
+	8.2 Does a hiScores item load correctly?
+	8.3 Change phone time to 3 hours past login hour and open hiScores again. Does it reload (with loading screen)?
+		If yes, change phone time back to normal.
+	8.4 Press the menu button in the hiScores page. Does it resync correctly? Write down the hiScores login hour at this point.
+		Repeat 8.3
+
+Grand Exchange Check:
+	9.0 Do all categories show?
+	9.1 When a category is clicked is the right loading dialog shown?
+	9.2 When a category is loaded, are alphabets always visible?
+	9.3 Does tapping an item in a category load correctly?
+	9.4 Does tapping # in items with numbered items load correctly?
+	9.5 When a category doesn't have an item starting with a letter, is a message shown?
+	9.6 Tap the menu button. Does searching work as expected?
+
+Friends Check:
+	10.0 With no friends, do you see an add friend button?
+	10.1 Is a friend added correctly?
+	10.2 Can both hiScores and alog be loaded?
+	10.3 Can they both be resynched?
+	10.4 Does friends hiScores or Adventurer's log intefere with caching of your own hiscores and adventurers log?
+	10.5 Can a friend be deleted?
+
+Forum Time Check:
+	11.0 Is time displayed properly?
+	11.1 Tap menu button. Does time change when you hit resync?
+	
+Info Check:
+	12.0 Does tutorial display?
+	12.1 Does Disclaimer display?
+	12.2 Does about display? IS it the right version number and correct creator name?
+
+News Video Check 
+	13.0 Do pages with multiple video items show screen shots?
+	13.1 Can a video be played?
+	13.2 What happens when 2 videos are played at the same time?
+	13.3 Overall How does news with vide0 perform?
+	13.4 Does activating js on news webview, effect any other webviews?
+	13.5 Can you press back with the video stopping audio and closing the webview altogether?
+	13.6 Do you notice a slow down in the rest of the app after doing this?
+
+Combat Calculator Check
+	14.1 Does it load as expected for members and free players?
+	14.2 Does it work as expected with HiScores Synching?
+	14.3 Depending on whether you click hiScores or combat calculator first, does caching hi-scores work vice versa?
+	14.4 Is the combat level correctly displayed?
+	14.5 If you are level 200 do you see the badge of awesomeness?
+	14.6 Are all levels displayed correctly?
+	14.7 Is input handled properly? Even for idiot users?
+	14.8 Does the calculate button behave as expected?
+	14.9 Awesome!

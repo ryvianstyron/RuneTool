@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+  <Button
+  	android:id="@+id/gehometitle"
+  	android:text="Title"
+  	android:textStyle="bold"
+  	android:textColor="@color/White"
+  	android:textSize="20dp"
+  	android:src="@drawable/purple"
+  	android:layout_height="wrap_content"
+  	android:layout_width="fill_parent"
+  	android:layout_gravity="center_horizontal"/>
+  	<ListView
+   		android:id="@id/android:list" 
+   		android:layout_width="fill_parent"
+    	android:layout_height="fill_parent"
+   		android:layout_weight ="2">
+    </ListView>
+    <TextView 
+    	android:id="@id/android:empty"
+    	android:layout_width="fill_parent"
+    	android:layout_height="fill_parent" 
+    	android:text= ""/>
+</LinearLayout>

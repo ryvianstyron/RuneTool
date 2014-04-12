@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/Black">
+    
+   
+    <LinearLayout
+    	android:orientation="horizontal"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:gravity="center_vertical"
+    	android:background="@drawable/newsbackteal"
+    	android:id="@+id/heading">
+    	<TextView
+ 			android:layout_height="wrap_content"
+ 			android:layout_width="fill_parent"
+ 			android:autoLink="all"
+ 			android:text="Name goes here..."
+ 			android:id="@+id/itemName"
+ 			android:gravity="center_horizontal"
+ 			android:textSize="20dp"
+ 			android:textStyle="bold"
+ 			android:textColor="@color/white"/>
+ 	</LinearLayout>
+ 
+     <ScrollView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center_horizontal">
+    	<LinearLayout
+    		android:orientation="vertical"
+    		android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    		android:background="@color/Black">
+	 	<TextView
+	 		android:layout_marginTop="10dp"
+	 		android:layout_height="fill_parent"
+	 		android:layout_width="fill_parent"
+	 		android:textStyle="bold"
+	 		android:textColor="@color/white"
+	 		android:text="Description goes here"
+	 		android:id="@+id/desc"
+	 		android:gravity="center_horizontal"/>
+	 	<TextView
+	 		android:layout_marginTop="10dp"
+	 		android:layout_marginBottom="10dp"
+	 		android:layout_height="wrap_content"
+	 		android:layout_width="fill_parent"
+	 		android:textColor="@color/white"
+	 		android:textStyle="bold"
+	 		android:text="Type goes here"
+	 		android:id="@+id/type"
+	 		android:gravity="center_horizontal"/>
+	 	<TextView
+	 		android:layout_height="wrap_content"
+	 		android:layout_width="fill_parent"
+	 		android:textColor="@color/white"
+	 		android:text="Id goes here"
+	 		android:id="@+id/id"
+	 		android:textStyle="bold"
+	 		android:gravity="center_horizontal"/>
+	 	<TextView
+	 		android:layout_marginTop="10dp"
+	 		android:layout_height="fill_parent"
+	 		android:layout_width="fill_parent"
+	 		android:textStyle="bold"
+	 		android:textColor="@color/white"
+	 		android:text="Pricing Predictors:"
+	 		android:id="@+id/price"
+	 		android:gravity="center_horizontal"/>
+	 	<TextView
+	 		android:layout_marginTop="10dp"
+	 		android:layout_marginBottom="10dp"
+	 		android:layout_height="wrap_content"
+	 		android:textColor="@color/white"
+	 		android:layout_width="fill_parent"
+	 		android:textStyle="bold"
+	 		android:text="Price today trend goes here"
+	 		android:id="@+id/today"
+	 		android:gravity="center_horizontal"/>
+	 	<TextView
+	 		android:layout_height="wrap_content"
+	 		android:layout_width="fill_parent"
+	 		android:textColor="@color/white"
+	 		android:text="Price Current Trend goes here"
+	 		android:id="@+id/current"
+	 		android:textStyle="bold"
+	 		android:gravity="center_horizontal"/>
+	 	
+	 	<LinearLayout
+	 		android:layout_height="wrap_content"
+	 		android:layout_width="fill_parent"
+	 		android:layout_marginBottom="10dp"
+	 		android:gravity="center_horizontal"
+	 		android:orientation="vertical">
+	 		 <WebView
+	  			android:layout_height ="150dp"
+	  			android:layout_width ="150dp"
+	  			android:id="@+id/webview"
+	  			android:background="@drawable/blueish"
+	  			android:gravity="center_horizontal"/>
+	    </LinearLayout>
+	    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

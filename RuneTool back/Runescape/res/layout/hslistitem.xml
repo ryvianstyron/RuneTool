@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+  <LinearLayout
+  		android:layout_height="wrap_content"
+  		android:layout_width = "fill_parent"
+  		android:orientation = "horizontal"
+  		android:gravity = "center_vertical"
+  		android:background="@drawable/buttonback">
+	<ImageView
+  		android:id="@+id/hsimage"
+  		android:layout_height="wrap_content" 
+  		android:background="@drawable/blank" 
+  		android:layout_width="wrap_content"
+  		android:gravity = "center_vertical"/>
+  	<TextView
+  		android:id="@+id/skillname"
+  		android:textStyle="bold"
+  		android:layout_height="wrap_content"
+  		android:text ="Skill Name" 
+  		android:layout_width="75dp"
+  		android:gravity ="center_horizontal"
+  		android:textColor="@color/white" 
+  		android:layout_weight="1"/>
+  	<TextView
+  		android:id="@+id/hslevel"
+  		android:textStyle="bold"
+  		android:layout_height="wrap_content"
+  		android:text ="Level" 
+  		android:gravity ="center_horizontal" 
+  		android:textColor="@color/white" 
+  		android:layout_weight="1" 
+  		android:layout_width="40dp"/>
+  	<TextView
+  		android:id="@+id/hsxp"
+  		android:layout_height="wrap_content"
+  		android:textColor="@color/white" 
+  		android:text ="Total Xp" 
+  		android:textStyle="bold"
+  		android:gravity ="center_horizontal" 
+  		android:layout_weight="1" 
+  		android:layout_width="50dp"/>
+	</LinearLayout>
+</LinearLayout>

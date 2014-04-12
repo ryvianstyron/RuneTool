@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/Black">
+    
+    <LinearLayout
+    	android:orientation="horizontal"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:gravity="center_vertical"
+    	android:background="@drawable/newsbackteal"
+    	android:id="@+id/heading">
+    	<Button
+        	android:id="@+id/levelimage"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:background="@drawable/cooking"
+        	android:layout_marginLeft="2dip"
+        	android:gravity="center_vertical"/>
+    	<TextView
+ 			android:layout_height="wrap_content"
+ 			android:layout_width="fill_parent"
+ 			android:autoLink="all"
+ 			android:text="Title goes here..."
+ 			android:id="@+id/leveltitle"
+ 			android:gravity="center_horizontal"
+ 			android:textSize="20dp"
+ 			android:textStyle="bold"
+ 			android:textColor="@color/white"/>
+ 	</LinearLayout>
+ 
+ 	<TextView
+ 		android:layout_marginTop="10dp"
+ 		android:layout_height="wrap_content"
+ 		android:layout_width="fill_parent"
+ 		android:text="Level Goes Here"
+ 		android:id="@+id/level"
+ 		android:textSize="18dp"
+ 		android:textStyle="bold"
+ 		android:textColor="@color/white"
+ 		android:gravity="center_horizontal"/>
+ 	<TextView
+ 		android:layout_marginTop="10dp"
+ 		android:layout_height="fill_parent"
+ 		android:layout_width="fill_parent"
+ 		android:textStyle="bold"
+ 		android:text="Rank goes here"
+ 		android:id="@+id/rank"
+ 		android:gravity="center_horizontal"/>
+ 	<TextView
+ 		android:layout_marginTop="10dp"
+ 		android:layout_marginBottom="10dp"
+ 		android:layout_height="wrap_content"
+ 		android:layout_width="fill_parent"
+ 		android:textStyle="bold"
+ 		android:text="Total Xp Goes Here"
+ 		android:id="@+id/totalxp"
+ 		android:autoLink="web"
+ 		android:gravity="center_horizontal"/>
+ 	<TextView
+ 		android:layout_height="wrap_content"
+ 		android:layout_width="fill_parent"
+ 		android:text="Xp to Next Level Goes here"
+ 		android:id="@+id/nextxp"
+ 		android:textStyle="bold"
+ 		android:gravity="center_horizontal"/>
+ 	<RelativeLayout
+ 		android:id="@+id/relLayout1"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_gravity="center_horizontal">
+	 	<ProgressBar
+	     	style="@android:style/Widget.ProgressBar.Horizontal"
+	     	android:id="@+id/progress"
+	     	android:layout_height="wrap_content"
+	 		android:layout_width="200dp"
+	 		android:layout_marginTop="5dp"
+	 		android:layout_marginBottom="5dp"
+	 		android:progress="10"/>
+		<TextView
+	      	android:text="100%"
+	      	android:id="@+id/percent"
+	      	android:paddingTop="6dp"
+	      	android:layout_gravity="center_horizontal"
+	      	android:textColor="@color/white"
+	      	android:textStyle="bold"
+	      	android:layout_width="wrap_content"
+	      	android:layout_centerInParent="true" 
+	      	android:layout_height="wrap_content"
+	      	android:layout_marginBottom="5dp"/>
+ 	</RelativeLayout>	
+ 	<TextView
+ 		android:layout_height="4dp"
+ 		android:layout_width="fill_parent"/>
+</LinearLayout>

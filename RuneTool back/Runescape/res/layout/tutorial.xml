@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/Black"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/distitle"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:background="@drawable/buttonback2"
+                android:gravity="center_horizontal"
+                android:text="Mini-Tutorial"
+                android:textColor="@color/White"
+                android:textSize="15dp"/>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:id="@+id/disdesc"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="How can I keep track of my friends?"
+                android:textSize="13dp"
+                android:textStyle="bold"
+                android:gravity="center_horizontal">
+            </TextView>
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Tap the Friends button on the main screen."
+                android:textSize="12dp"/>
+            <Button
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Friends"
+                android:textColor="@color/White"
+                android:background="@drawable/homebuttons" />
+             <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Tap the menu button on your phone, to view the options menu for friends."
+                android:textSize="12dp"/>
+             <Button
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/White"
+                android:background="@drawable/friendsoptions" />
+            <TextView
+                android:layout_marginTop="10dp"
+                android:id="@+id/disdesc"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="To add a friend, tap the Add Friend option and enter their name. Make sure your friend is a member."
+                android:textSize="12dp"/>
+             <Button
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/addfriendpic"/>
+            <TextView
+                android:layout_marginTop="10dp"
+                android:id="@+id/disdesc"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="Once your friend has been validated, tap their name to view their Adventurer's Log or High Scores"
+                android:textSize="12dp"/>
+                 <Button
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/friendaloghs"/>
+             <TextView
+                android:layout_marginTop="10dp"
+                android:id="@+id/disdesc"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="How does the Grand Exchange Work?"
+                android:textSize="13dp"
+                android:textStyle="bold"
+                android:gravity="center_horizontal"/>
+                <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Tap the Grand Exchange button on the main screen and select a category."
+                android:textSize="12dp"/>
+            <Button
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Grand Exchange"
+                android:textColor="@color/White"
+                android:background="@drawable/homebuttons" />
+             <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Once you've loaded a category, tap the menu button to view Grand Exchange options."
+                android:textSize="12dp"/>
+             <Button
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/White"
+                android:background="@drawable/geoptions" />
+             <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Tap Select Letter to display a choice of letters. Selecting a letter will load all items starting with that letter."
+                android:textSize="12dp"/>
+              <Button
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/White"
+                android:background="@drawable/letterpic" />
+               <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Tap Search to find items in this category. Make sure to enter the starting word for your search."
+                android:textSize="12dp"/>
+               <Button
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/White"
+                android:background="@drawable/searchpic" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

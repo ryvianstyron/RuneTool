@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/Black">
+    <LinearLayout
+    	android:orientation="horizontal"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:gravity="center_vertical"
+    	android:background="@drawable/newsbackteal"
+    	android:id="@+id/sdheading">
+    	<Button
+        	android:id="@+id/sdimage"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:background="@drawable/info"
+        	android:layout_marginLeft="2dp"
+        	android:gravity="center_vertical"/>
+    	<TextView
+    	    android:id="@+id/sdtitle"
+ 			android:layout_height="wrap_content"
+ 			android:layout_width="fill_parent"
+ 			android:gravity="center_horizontal"
+ 			android:textStyle="bold"
+ 			android:textColor="@color/white"/>
+ 	</LinearLayout>
+ 	<TextView
+ 	    android:id="@+id/sdtext"
+ 	    android:layout_width="fill_parent"
+ 	    android:layout_height="wrap_content"
+ 	    android:layout_gravity="right"
+ 	    android:layout_marginTop="4dp"
+ 	    android:gravity="center_vertical"
+ 	    android:textColor="@color/white" />
+ 	<LinearLayout
+ 	    android:layout_width="fill_parent"
+ 	    android:layout_height="wrap_content"
+ 	    android:gravity="center_horizontal"
+ 	    android:orientation="horizontal"
+ 	    android:id="@+id/sdbuttonholder" >
+ 	    <Button
+ 	        android:id="@+id/sdyes"
+ 	        android:layout_width="0dp"
+ 	        android:layout_height="wrap_content"
+ 	        android:layout_gravity="center_horizontal"
+ 	        android:layout_weight="1"
+ 	        android:background="@drawable/homebuttons"
+ 	        android:textColor="@color/white"
+ 	        android:textStyle="bold" />
+ 	    <Button
+ 	        android:id="@+id/sdno"
+ 	        android:layout_width="0dp"
+ 	        android:layout_height="wrap_content"
+ 	        android:layout_gravity="center_horizontal"
+ 	        android:layout_weight="1"
+ 	        android:background="@drawable/homebuttons"
+ 	        android:textColor="@color/white"
+ 	        android:textStyle="bold" />
+ 	</LinearLayout>
+</LinearLayout>

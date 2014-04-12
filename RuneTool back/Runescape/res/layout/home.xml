@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bluefire">
+    <ImageView
+			android:id="@+id/title"
+			android:layout_height="wrap_content"
+			android:layout_width="fill_parent"
+			android:src="@drawable/runescapetitle"
+			android:layout_marginTop="10dp"/>
+    <ScrollView
+    	android:layout_height="fill_parent"
+    	android:layout_width="fill_parent"
+    	android:gravity="center_horizontal">
+		<LinearLayout
+			android:layout_marginTop="35dip"
+			android:layout_width="200dip"
+			android:layout_height ="fill_parent"
+			android:layout_gravity="center_horizontal"
+			android:orientation="vertical">
+			<Button
+				android:id="@+id/newsButton"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:text="@string/newsButton"
+				android:background="@drawable/homebuttons"
+				android:textColor="@color/white"/>	
+			<Button
+				android:id="@+id/alogButton"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:text="@string/alogButton"
+				android:background="@drawable/homebuttons"
+				android:textColor="@color/white"/>
+			<Button
+				android:id="@+id/hiScoresButton"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:text="@string/hiScoresButton"
+				android:background="@drawable/homebuttons"
+				android:textColor="@color/white"/>
+			<Button
+				android:id="@+id/geButton"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:text="Grand Exchange"
+				android:background="@drawable/homebuttons"
+				android:textColor="@color/white"/>	
+			<Button
+				android:id="@+id/friendButton"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:text="Friends"
+				android:background="@drawable/homebuttons"
+				android:textColor="@color/white"/>
+			<Button
+				android:id="@+id/timeButton"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:text="@string/timeButton"
+				android:background="@drawable/homebuttons"
+				android:textColor="@color/white"/>
+		</LinearLayout>
+</ScrollView>
+</LinearLayout>

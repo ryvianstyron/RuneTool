@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent" >
+  <LinearLayout
+  android:orientation="horizontal"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:layout_gravity="center">
+  	
+     <TextView 
+    	android:id="@+id/newsTitle"
+    	android:textSize="16sp"
+    	android:textStyle="bold"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:gravity="center_vertical"
+    	android:padding="3dp"
+    	android:text="Title"
+    	android:textColor="@color/white"
+    	android:background="@drawable/buttonback3"/>
+  </LinearLayout>
+    <TextView
+    	android:id="@+id/date"
+    	android:textSize="11sp"
+    	android:textStyle="bold"
+    	android:layout_width="fill_parent"
+    	android:layout_height="15dp"
+    	android:background="@drawable/blue"
+    	android:text="Date"
+    	android:paddingRight="3dp"
+    	android:gravity="right"
+    	android:textColor="@color/white"/>
+    <TextView
+    	android:id="@+id/category"
+    	android:textSize="11sp"
+    	android:textStyle="bold"
+    	android:layout_width="fill_parent"
+    	android:layout_height="15dp"
+    	android:paddingRight="3dp"
+    	android:background="@drawable/blue"
+    	android:text="Category"
+    	android:gravity="right"
+    	android:textColor="@color/white"/>
+  <WebView
+  	android:layout_height = "fill_parent"
+  	android:layout_width ="fill_parent"
+  	android:background="@drawable/teal"
+  	android:id="@+id/webview"/>
+ 
+</LinearLayout>

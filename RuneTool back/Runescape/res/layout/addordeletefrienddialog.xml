@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/Black">
+    
+    <LinearLayout
+    	android:orientation="horizontal"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:gravity="center_vertical"
+    	android:background="@drawable/newsbackteal"
+    	android:id="@+id/heading">
+    	<Button
+        	android:id="@+id/adddeleteimage"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:background="@drawable/cooking"
+        	android:layout_marginLeft="2dip"
+        	android:gravity="center_vertical"/>
+    	<TextView
+ 			android:layout_height="wrap_content"
+ 			android:layout_width="fill_parent"
+ 			android:autoLink="all"
+ 			android:text="Title goes here..."
+ 			android:id="@+id/adddeletetitle"
+ 			android:gravity="center_horizontal"
+ 			android:textSize="20dp"
+ 			android:textStyle="bold"
+ 			android:textColor="@color/white"/>
+ 	</LinearLayout>
+
+ 	<EditText
+ 	    android:id="@+id/friendname"
+ 	    android:layout_width="fill_parent"
+ 	    android:layout_height="wrap_content"
+ 	    android:layout_gravity="right"
+ 	    android:layout_marginTop="4dp"
+ 	    android:background="@drawable/buttonback"
+ 	    android:gravity="center_vertical"
+ 	    android:hint="Enter friend name.."
+ 	    android:textStyle="bold"
+ 	    android:textColor="@color/white" />
+ 	
+ 	<LinearLayout
+ 	    android:layout_width="fill_parent"
+ 	    android:layout_height="wrap_content"
+ 	    android:gravity="center_horizontal"
+ 	    android:orientation="horizontal" >
+
+ 	    <Button
+ 	        android:id="@+id/addordelete"
+ 	        android:layout_width="0dp"
+ 	        android:layout_height="wrap_content"
+ 	        android:layout_gravity="center_horizontal"
+ 	        android:layout_weight="1"
+ 	        android:background="@drawable/homebuttons"
+ 	        android:text="add or delete"
+ 	        android:textColor="@color/white"
+ 	        android:textStyle="bold" />
+
+ 	    <Button
+ 	        android:id="@+id/dismiss"
+ 	        android:layout_width="0dp"
+ 	        android:layout_height="wrap_content"
+ 	        android:layout_gravity="center_horizontal"
+ 	        android:layout_weight="1"
+ 	        android:background="@drawable/homebuttons"
+ 	        android:text="Cancel"
+ 	        android:textColor="@color/white"
+ 	        android:textStyle="bold" />
+ 	</LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,1211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:textStyle="bold">
+
+<ScrollView
+	android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+    android:gravity="center_horizontal">
+	<TableLayout
+		android:layout_width="fill_parent"
+    	android:layout_height="fill_parent"
+    	android:gravity ="center_horizontal">
+    <TableRow
+			android:layout_width="fill_parent"
+   			android:layout_height="wrap_content"  
+   			android:layout_weight="1"
+   			android:background="@drawable/blue">
+			<Button
+  				android:layout_height="wrap_content" 
+  				android:layout_width="wrap_content"
+  				android:background="@drawable/blank"/>
+  			<TextView
+  				
+  				android:layout_height="wrap_content"
+  				android:text ="Skill" 
+  				android:layout_weight="1" 
+  				android:layout_width="0dp"
+  				android:gravity ="center_horizontal"
+  				android:textStyle="bold"/>
+  			<TextView
+  				
+  				android:layout_height="wrap_content"
+  				android:text ="Level" 
+  				android:layout_weight="1" 
+  				android:layout_width="0dp"
+  				android:gravity ="center_horizontal"
+  				android:textStyle="bold"/>
+  			<TextView
+  				
+  				android:layout_height="wrap_content"
+  				android:text ="Total Xp" 
+  				android:layout_weight="1" 
+  				android:layout_width="0dp"
+  				android:gravity ="center_horizontal"
+  				android:textStyle="bold"/>
+  			<TextView
+  				
+  				android:layout_height="wrap_content"
+  				android:text ="Rank" 
+  				android:layout_weight="1" 
+  				android:layout_width="0dp"
+  				android:gravity ="center_horizontal"
+  				android:textStyle="bold"/>
+		</TableRow>	
+		<!-- OVERALL -->
+		<TableRow
+			android:layout_width="fill_parent"
+   			android:layout_height="wrap_content"  
+   			android:layout_weight="1">
+			<Button
+  				android:id="@+id/oimage"
+  				android:layout_height="wrap_content" 
+  				android:layout_width="wrap_content"
+  				android:background="@drawable/overall"/>
+  			<TextView
+  				android:id="@+id/oskill"
+  				android:layout_height="wrap_content"
+  				android:text ="Skill" 
+  				android:layout_weight="1" 
+  				android:layout_width="0dp"
+  				android:gravity ="center_horizontal"/>
+  			<TextView
+  				android:id="@+id/olevel"
+  				android:layout_height="wrap_content"
+  				android:text ="Level" 
+  				android:layout_weight="1" 
+  				android:layout_width="0dp"
+  				android:gravity ="center_horizontal"/>
+  			<TextView
+  				android:id="@+id/oxp"
+  				android:layout_height="wrap_content"
+  				android:text ="Total Xp" 
+  				android:layout_weight="1" 
+  				android:layout_width="0dp"
+  				android:gravity ="center_horizontal"/>
+  			<TextView
+  				android:id="@+id/orank"
+  				android:layout_height="wrap_content"
+  				android:text ="Rank" 
+  				android:layout_weight="1" 
+  				android:layout_width="0dp"
+  				android:gravity ="center_horizontal"/>
+		</TableRow>
+		<LinearLayout
+  			android:layout_height="1dp"
+  			android:layout_width ="fill_parent"
+  			android:background="@color/blue">
+  		</LinearLayout>
+		<!-- ATTACK-->
+		<TableRow
+			android:layout_width="fill_parent"
+   			android:layout_height="wrap_content"  
+   			android:layout_weight="1">
+			<Button
+  				android:id="@+id/oimage"
+  				android:layout_height="wrap_content" 
+  				android:layout_width="wrap_content"
+  				android:background="@drawable/attack"/>
+  			<TextView
+  				android:id="@+id/askill"
+  				android:layout_height="wrap_content"
+  				android:text ="Skill" 
+  				android:layout_weight="1" 
+  				android:layout_width="0dp"
+  				android:gravity ="center_horizontal"/>
+  			<TextView
+  				android:id="@+id/alevel"
+  				android:layout_height="wrap_content"
+  				android:text ="Level" 
+  				android:layout_weight="1" 
+  				android:layout_width="0dp"
+  				android:gravity ="center_horizontal"/>
+  			<TextView
+  				android:id="@+id/axp"
+  				android:layout_height="wrap_content"
+  				android:text ="Total Xp" 
+  				android:layout_weight="1" 
+  				android:layout_width="0dp"
+  				android:gravity ="center_horizontal"/>
+  			<TextView
+  				android:id="@+id/arank"
+  				android:layout_height="wrap_content"
+  				android:text ="Rank" 
+  				android:layout_weight="1" 
+  				android:layout_width="0dp"
+  				android:gravity ="center_horizontal"/>
+		</TableRow>
+		<LinearLayout
+  			android:layout_height="1dp"
+  			android:layout_width ="fill_parent"
+  			android:background="@color/blue">
+  		</LinearLayout>
+		<!-- DEFENSE-->
+		<TableRow
+			android:layout_width="fill_parent"
+   			android:layout_height="wrap_content"  
+   			android:layout_weight="1">
+			<Button
+  				android:id="@+id/dimage"
+  				android:layout_height="wrap_content" 
+  				android:layout_width="wrap_content"
+  				android:background="@drawable/defense"/>
+  			<TextView
+  				android:id="@+id/dskill"
+  				android:layout_height="wrap_content"
+  				android:text ="Skill" 
+  				android:layout_weight="1" 
+  				android:layout_width="0dp"
+  				android:gravity ="center_horizontal"/>
+  			<TextView
+  				android:id="@+id/dlevel"
+  				android:layout_height="wrap_content"
+  				android:text ="Level" 
+  				android:layout_weight="1" 
+  				android:layout_width="0dp"
+  				android:gravity ="center_horizontal"/>
+  			<TextView
+  				android:id="@+id/dxp"
+  				android:layout_height="wrap_content"
+  				android:text ="Total Xp" 
+  				android:layout_weight="1" 
+  				android:layout_width="0dp"
+  				android:gravity ="center_horizontal"/>
+  			<TextView
+  				android:id="@+id/drank"
+  				android:layout_height="wrap_content"
+  				android:text ="Rank" 
+  				android:layout_weight="1" 
+  				android:layout_width="0dp"
+  				android:gravity ="center_horizontal"/>
+		</TableRow>
+		<LinearLayout
+  			android:layout_height="1dp"
+  			android:layout_width ="fill_parent"
+  			android:background="@color/blue">
+  		</LinearLayout>
+		<!-- STRENGTH-->
+		<TableRow
+			android:layout_width="fill_parent"
+   			android:layout_height="wrap_content"  
+   			android:layout_weight="1">
+			<Button
+  				android:id="@+id/simage"
+  				android:layout_height="wrap_content" 
+  				android:layout_width="wrap_content"
+  				android:background="@drawable/strength"/>
+  			<TextView
+  				android:id="@+id/sskill"
+  				android:layout_height="wrap_content"
+  				android:text ="Skill" 
+  				android:layout_weight="1" 
+  				android:layout_width="0dp"
+  				android:gravity ="center_horizontal"/>
+  			<TextView
+  				android:id="@+id/slevel"
+  				android:layout_height="wrap_content"
+  				android:text ="Level" 
+  				android:layout_weight="1" 
+  				android:layout_width="0dp"
+  				android:gravity ="center_horizontal"/>
+  			<TextView
+  				android:id="@+id/sxp"
+  				android:layout_height="wrap_content"
+  				android:text ="Total Xp" 
+  				android:layout_weight="1" 
+  				android:layout_width="0dp"
+  				android:gravity ="center_horizontal"/>
+  			<TextView
+  				android:id="@+id/srank"
+  				android:layout_height="wrap_content"
+  				android:text ="Rank" 
+  				android:layout_weight="1" 
+  				android:layout_width="0dp"
+  				android:gravity ="center_horizontal"/>
+		</TableRow>
+		<LinearLayout
+  			android:layout_height="1dp"
+  			android:layout_width ="fill_parent"
+  			android:background="@color/blue">
+  		</LinearLayout>
+		<!-- CONSTITUTION-->
+		<TableRow
+			android:layout_width="fill_parent"
+   			android:layout_height="wrap_content"  
+   			android:layout_weight="1">
+			<Button
+  				android:id="@+id/cimage"
+  				android:layout_height="wrap_content" 
+  				android:layout_width="wrap_content"
+  				android:background="@drawable/hitpoint"/>
+  			<TextView
+  				android:id="@+id/cskill"
+  				android:layout_height="wrap_content"
+  				android:text ="Skill" 
+  				android:layout_weight="1" 
+  				android:layout_width="0dp"
+  				android:gravity ="center_horizontal"/>
+  			<TextView
+  				android:id="@+id/clevel"
+  				android:layout_height="wrap_content"
+  				android:text ="Level" 
+  				android:layout_weight="1" 
+  				android:layout_width="0dp"
+  				android:gravity ="center_horizontal"/>
+  			<TextView
+  				android:id="@+id/cxp"
+  				android:layout_height="wrap_content"
+  				android:text ="Total Xp" 
+  				android:layout_weight="1" 
+  				android:layout_width="0dp"
+  				android:gravity ="center_horizontal"/>
+  			<TextView
+  				android:id="@+id/crank"
+  				android:layout_height="wrap_content"
+  				android:text ="Rank" 
+  				android:layout_weight="1" 
+  				android:layout_width="0dp"
+  				android:gravity ="center_horizontal"/>
+		</TableRow>
+		<LinearLayout
+  			android:layout_height="1dp"
+  			android:layout_width ="fill_parent"
+  			android:background="@color/blue">
+  		</LinearLayout>
+		<!-- RANGED-->
+		<TableRow
+			android:layout_width="fill_parent"
+   			android:layout_height="wrap_content"  
+   			android:layout_weight="1">
+			<Button
+  				android:id="@+id/rimage"
+  				android:layout_height="wrap_content" 
+  				android:layout_width="wrap_content"
+  				android:background="@drawable/ranged"/>
+  			<TextView
+  				android:id="@+id/rskill"
+  				android:layout_height="wrap_content"
+  				android:text ="Skill" 
+  				android:layout_weight="1" 
+  				android:layout_width="0dp"
+  				android:gravity ="center_horizontal"/>
+  			<TextView
+  				android:id="@+id/rlevel"
+  				android:layout_height="wrap_content"
+  				android:text ="Level" 
+  				android:layout_weight="1" 
+  				android:layout_width="0dp"
+  				android:gravity ="center_horizontal"/>
+  			<TextView
+  				android:id="@+id/rxp"
+  				android:layout_height="wrap_content"
+  				android:text ="Total Xp" 
+  				android:layout_weight="1" 
+  				android:layout_width="0dp"
+  				android:gravity ="center_horizontal"/>
+  			<TextView
+  				android:id="@+id/rrank"
+  				android:layout_height="wrap_content"
+  				android:text ="Rank" 
+  				android:layout_weight="1" 
+  				android:layout_width="0dp"
+  				android:gravity ="center_horizontal"/>
+		</TableRow>
+		<LinearLayout
+  			android:layout_height="1dp"
+  			android:layout_width ="fill_parent"
+  			android:background="@color/blue">
+  		</LinearLayout>
+		<!-- PRAYER-->
+		<TableRow
+			android:layout_width="fill_parent"
+   			android:layout_height="wrap_content"  
+   			android:layout_weight="1">
+			<Button
+  				android:id="@+id/pimage"
+  				android:layout_height="wrap_content" 
+  				android:layout_width="wrap_content"
+  				android:background="@drawable/prayer"/>
+  			<TextView
+  				android:id="@+id/pskill"
+  				android:layout_height="wrap_content"
+  				android:text ="Skill" 
+  				android:layout_weight="1" 
+  				android:layout_width="0dp"
+  				android:gravity ="center_horizontal"/>
+  			<TextView
+  				android:id="@+id/plevel"
+  				android:layout_height="wrap_content"
+  				android:text ="Level" 
+  				android:layout_weight="1" 
+  				android:layout_width="0dp"
+  				android:gravity ="center_horizontal"/>
+  			<TextView
+  				android:id="@+id/pxp"
+  				android:layout_height="wrap_content"
+  				android:text ="Total Xp" 
+  				android:layout_weight="1" 
+  				android:layout_width="0dp"
+  				android:gravity ="center_horizontal"/>
+  			<TextView
+  				android:id="@+id/prank"
+  				android:layout_height="wrap_content"
+  				android:text ="Rank" 
+  				android:layout_weight="1" 
+  				android:layout_width="0dp"
+  				android:gravity ="center_horizontal"/>
+		</TableRow>
+		<LinearLayout
+  			android:layout_height="1dp"
+  			android:layout_width ="fill_parent"
+  			android:background="@color/blue">
+  		</LinearLayout>
+		<!-- MAGIC-->
+		<TableRow
+			android:layout_width="fill_parent"
+   			android:layout_height="wrap_content"  
+   			android:layout_weight="1">
+			<Button
+  				android:id="@+id/mimage"
+  				android:layout_height="wrap_content" 
+  				android:layout_width="wrap_content"
+  				android:background="@drawable/magic"/>
+  			<TextView
+  				android:id="@+id/mskill"
+  				android:layout_height="wrap_content"
+  				android:text ="Skill" 
+  				android:layout_weight="1" 
+  				android:layout_width="0dp"
+  				android:gravity ="center_horizontal"/>
+  			<TextView
+  				android:id="@+id/mlevel"
+  				android:layout_height="wrap_content"
+  				android:text ="Level" 
+  				android:layout_weight="1" 
+  				android:layout_width="0dp"
+  				android:gravity ="center_horizontal"/>
+  			<TextView
+  				android:id="@+id/mxp"
+  				android:layout_height="wrap_content"
+  				android:text ="Total Xp" 
+  				android:layout_weight="1" 
+  				android:layout_width="0dp"
+  				android:gravity ="center_horizontal"/>
+  			<TextView
+  				android:id="@+id/mrank"
+  				android:layout_height="wrap_content"
+  				android:text ="Rank" 
+  				android:layout_weight="1" 
+  				android:layout_width="0dp"
+  				android:gravity ="center_horizontal"/>
+		</TableRow>
+		<LinearLayout
+  			android:layout_height="1dp"
+  			android:layout_width ="fill_parent"
+  			android:background="@color/blue">
+  		</LinearLayout>
+		<!-- COOKING-->
+		<TableRow
+			android:layout_width="fill_parent"
+   			android:layout_height="wrap_content"  
+   			android:layout_weight="1">
+			<Button
+  				android:id="@+id/coimage"
+  				android:layout_height="wrap_content" 
+  				android:layout_width="wrap_content"
+  				android:background="@drawable/cooking"/>
+  			<TextView
+  				android:id="@+id/coskill"
+  				android:layout_height="wrap_content"
+  				android:text ="Skill" 
+  				android:layout_weight="1" 
+  				android:layout_width="0dp"
+  				android:gravity ="center_horizontal"/>
+  			<TextView
+  				android:id="@+id/colevel"
+  				android:layout_height="wrap_content"
+  				android:text ="Level" 
+  				android:layout_weight="1" 
+  				android:layout_width="0dp"
+  				android:gravity ="center_horizontal"/>
+  			<TextView
+  				android:id="@+id/coxp"
+  				android:layout_height="wrap_content"
+  				android:text ="Total Xp" 
+  				android:layout_weight="1" 
+  				android:layout_width="0dp"
+  				android:gravity ="center_horizontal"/>
+  			<TextView
+  				android:id="@+id/corank"
+  				android:layout_height="wrap_content"
+  				android:text ="Rank" 
+  				android:layout_weight="1" 
+  				android:layout_width="0dp"
+  				android:gravity ="center_horizontal"/>
+		</TableRow>
+		<LinearLayout
+  			android:layout_height="1dp"
+  			android:layout_width ="fill_parent"
+  			android:background="@color/blue">
+  		</LinearLayout>
+		<!-- WOODCUTTING-->
+		<TableRow
+			android:layout_width="fill_parent"
+   			android:layout_height="wrap_content"  
+   			android:layout_weight="1">
+			<Button
+  				android:id="@+id/wimage"
+  				android:layout_height="wrap_content" 
+  				android:layout_width="wrap_content"
+  				android:background="@drawable/woodcutting"/>
+  			<TextView
+  				android:id="@+id/wskill"
+  				android:layout_height="wrap_content"
+  				android:text ="Skill" 
+  				android:layout_weight="1" 
+  				android:layout_width="0dp"
+  				android:textSize="12dp"
+  				android:gravity ="center_horizontal"/>
+  			<TextView
+  				android:id="@+id/wlevel"
+  				android:layout_height="wrap_content"
+  				android:text ="Level" 
+  				android:layout_weight="1" 
+  				android:layout_width="0dp"
+  				android:gravity ="center_horizontal"/>
+  			<TextView
+  				android:id="@+id/wxp"
+  				android:layout_height="wrap_content"
+  				android:text ="Total Xp" 
+  				android:layout_weight="1" 
+  				android:layout_width="0dp"
+  				android:gravity ="center_horizontal"/>
+  			<TextView
+  				android:id="@+id/wrank"
+  				android:layout_height="wrap_content"
+  				android:text ="Rank" 
+  				android:layout_weight="1" 
+  				android:layout_width="0dp"
+  				android:gravity ="center_horizontal"/>
+		</TableRow>
+		<LinearLayout
+  			android:layout_height="1dp"
+  			android:layout_width ="fill_parent"
+  			android:background="@color/blue">
+  		</LinearLayout>
+		<!-- FLETCHING-->
+		<TableRow
+			android:layout_width="fill_parent"
+   			android:layout_height="wrap_content"  
+   			android:layout_weight="1">
+			<Button
+  				android:id="@+id/flimage"
+  				android:layout_height="wrap_content" 
+  				android:layout_width="wrap_content"
+  				android:background="@drawable/fletching"/>
+  			<TextView
+  				android:id="@+id/flskill"
+  				android:layout_height="wrap_content"
+  				android:text ="Skill" 
+  				android:layout_weight="1" 
+  				android:layout_width="0dp"
+  				android:gravity ="center_horizontal"/>
+  			<TextView
+  				android:id="@+id/fllevel"
+  				android:layout_height="wrap_content"
+  				android:text ="Level" 
+  				android:layout_weight="1" 
+  				android:layout_width="0dp"
+  				android:gravity ="center_horizontal"/>
+  			<TextView
+  				android:id="@+id/flxp"
+  				android:layout_height="wrap_content"
+  				android:text ="Total Xp" 
+  				android:layout_weight="1" 
+  				android:layout_width="0dp"
+  				android:gravity ="center_horizontal"/>
+  			<TextView
+  				android:id="@+id/flrank"
+  				android:layout_height="wrap_content"
+  				android:text ="Rank" 
+  				android:layout_weight="1" 
+  				android:layout_width="0dp"
+  				android:gravity ="center_horizontal"/>
+		</TableRow>
+		<LinearLayout
+  			android:layout_height="1dp"
+  			android:layout_width ="fill_parent"
+  			android:background="@color/blue">
+  		</LinearLayout>
+		<!-- FISHING-->
+		<TableRow
+			android:layout_width="fill_parent"
+   			android:layout_height="wrap_content"  
+   			android:layout_weight="1">
+			<Button
+  				android:id="@+id/fimage"
+  				android:layout_height="wrap_content" 
+  				android:layout_width="wrap_content"
+  				android:background="@drawable/fishing"/>
+  			<TextView
+  				android:id="@+id/fskill"
+  				android:layout_height="wrap_content"
+  				android:text ="Skill" 
+  				android:layout_weight="1" 
+  				android:layout_width="0dp"
+  				android:gravity ="center_horizontal"/>
+  			<TextView
+  				android:id="@+id/flevel"
+  				android:layout_height="wrap_content"
+  				android:text ="Level" 
+  				android:layout_weight="1" 
+  				android:layout_width="0dp"
+  				android:gravity ="center_horizontal"/>
+  			<TextView
+  				android:id="@+id/fxp"
+  				android:layout_height="wrap_content"
+  				android:text ="Total Xp" 
+  				android:layout_weight="1" 
+  				android:layout_width="0dp"
+  				android:gravity ="center_horizontal"/>
+  			<TextView
+  				android:id="@+id/frank"
+  				android:layout_height="wrap_content"
+  				android:text ="Rank" 
+  				android:layout_weight="1" 
+  				android:layout_width="0dp"
+  				android:gravity ="center_horizontal"/>
+		</TableRow>
+		<LinearLayout
+  			android:layout_height="1dp"
+  			android:layout_width ="fill_parent"
+  			android:background="@color/blue">
+  		</LinearLayout>
+		<!-- FIREMAKING-->
+			<TableRow
+			android:layout_width="fill_parent"
+   			android:layout_height="wrap_content"  
+   			android:layout_weight="1">
+			<Button
+  				android:id="@+id/fiimage"
+  				android:layout_height="wrap_content" 
+  				android:layout_width="wrap_content"
+  				android:background="@drawable/firemaking"/>
+  			<TextView
+  				android:id="@+id/fiskill"
+  				android:layout_height="wrap_content"
+  				android:text ="Skill" 
+  				android:layout_weight="1" 
+  				android:layout_width="0dp"
+  				android:gravity ="center_horizontal"/>
+  			<TextView
+  				android:id="@+id/filevel"
+  				android:layout_height="wrap_content"
+  				android:text ="Level" 
+  				android:layout_weight="1" 
+  				android:layout_width="0dp"
+  				android:gravity ="center_horizontal"/>
+  			<TextView
+  				android:id="@+id/fixp"
+  				android:layout_height="wrap_content"
+  				android:text ="Total Xp" 
+  				android:layout_weight="1" 
+  				android:layout_width="0dp"
+  				android:gravity ="center_horizontal"/>
+  			<TextView
+  				android:id="@+id/firank"
+  				android:layout_height="wrap_content"
+  				android:text ="Rank" 
+  				android:layout_weight="1" 
+  				android:layout_width="0dp"
+  				android:gravity ="center_horizontal"/>
+		</TableRow>
+		<LinearLayout
+  			android:layout_height="1dp"
+  			android:layout_width ="fill_parent"
+  			android:background="@color/blue">
+  		</LinearLayout>
+		<!-- CRAFTING-->
+		<TableRow
+			android:layout_width="fill_parent"
+   			android:layout_height="wrap_content"  
+   			android:layout_weight="1">
+			<Button
+  				android:id="@+id/crimage"
+  				android:layout_height="wrap_content" 
+  				android:layout_width="wrap_content"
+  				android:background="@drawable/crafting"/>
+  			<TextView
+  				android:id="@+id/crskill"
+  				android:layout_height="wrap_content"
+  				android:text ="Skill" 
+  				android:layout_weight="1" 
+  				android:layout_width="0dp"
+  				android:gravity ="center_horizontal"/>
+  			<TextView
+  				android:id="@+id/crlevel"
+  				android:layout_height="wrap_content"
+  				android:text ="Level" 
+  				android:layout_weight="1" 
+  				android:layout_width="0dp"
+  				android:gravity ="center_horizontal"/>
+  			<TextView
+  				android:id="@+id/crxp"
+  				android:layout_height="wrap_content"
+  				android:text ="Total Xp" 
+  				android:layout_weight="1" 
+  				android:layout_width="0dp"
+  				android:gravity ="center_horizontal"/>
+  			<TextView
+  				android:id="@+id/crrank"
+  				android:layout_height="wrap_content"
+  				android:text ="Rank" 
+  				android:layout_weight="1" 
+  				android:layout_width="0dp"
+  				android:gravity ="center_horizontal"/>
+		</TableRow>
+		<LinearLayout
+  			android:layout_height="1dp"
+  			android:layout_width ="fill_parent"
+  			android:background="@color/blue">
+  		</LinearLayout>
+		<!-- SMITHING-->
+		<TableRow
+			android:layout_width="fill_parent"
+   			android:layout_height="wrap_content"  
+   			android:layout_weight="1">
+			<Button
+  				android:id="@+id/crimage"
+  				android:layout_height="wrap_content" 
+  				android:layout_width="wrap_content"
+  				android:background="@drawable/smithing"/>
+  			<TextView
+  				android:id="@+id/smskill"
+  				android:layout_height="wrap_content"
+  				android:text ="Skill" 
+  				android:layout_weight="1" 
+  				android:layout_width="0dp"
+  				android:gravity ="center_horizontal"/>
+  			<TextView
+  				android:id="@+id/smlevel"
+  				android:layout_height="wrap_content"
+  				android:text ="Level" 
+  				android:layout_weight="1" 
+  				android:layout_width="0dp"
+  				android:gravity ="center_horizontal"/>
+  			<TextView
+  				android:id="@+id/smxp"
+  				android:layout_height="wrap_content"
+  				android:text ="Total Xp" 
+  				android:layout_weight="1" 
+  				android:layout_width="0dp"
+  				android:gravity ="center_horizontal"/>
+  			<TextView
+  				android:id="@+id/smrank"
+  				android:layout_height="wrap_content"
+  				android:text ="Rank" 
+  				android:layout_weight="1" 
+  				android:layout_width="0dp"
+  				android:gravity ="center_horizontal"/>
+		</TableRow>
+		<LinearLayout
+  			android:layout_height="1dp"
+  			android:layout_width ="fill_parent"
+  			android:background="@color/blue">
+  		</LinearLayout>
+		<!-- MINING-->
+		<TableRow
+			android:layout_width="fill_parent"
+   			android:layout_height="wrap_content"  
+   			android:layout_weight="1">
+			<Button
+  				android:id="@+id/miimage"
+  				android:layout_height="wrap_content" 
+  				android:layout_width="wrap_content"
+  				android:background="@drawable/mining"/>
+  			<TextView
+  				android:id="@+id/miskill"
+  				android:layout_height="wrap_content"
+  				android:text ="Skill" 
+  				android:layout_weight="1" 
+  				android:layout_width="0dp"
+  				android:gravity ="center_horizontal"/>
+  			<TextView
+  				android:id="@+id/milevel"
+  				android:layout_height="wrap_content"
+  				android:text ="Level" 
+  				android:layout_weight="1" 
+  				android:layout_width="0dp"
+  				android:gravity ="center_horizontal"/>
+  			<TextView
+  				android:id="@+id/mixp"
+  				android:layout_height="wrap_content"
+  				android:text ="Total Xp" 
+  				android:layout_weight="1" 
+  				android:layout_width="0dp"
+  				android:gravity ="center_horizontal"/>
+  			<TextView
+  				android:id="@+id/mirank"
+  				android:layout_height="wrap_content"
+  				android:text ="Rank" 
+  				android:layout_weight="1" 
+  				android:layout_width="0dp"
+  				android:gravity ="center_horizontal"/>
+		</TableRow>
+		<LinearLayout
+  			android:layout_height="1dp"
+  			android:layout_width ="fill_parent"
+  			android:background="@color/blue">
+  		</LinearLayout>
+		<!-- HERBLORE-->
+		<TableRow
+			android:layout_width="fill_parent"
+   			android:layout_height="wrap_content"  
+   			android:layout_weight="1">
+			<Button
+  				android:id="@+id/himage"
+  				android:layout_height="wrap_content" 
+  				android:layout_width="wrap_content"
+  				android:background="@drawable/herblore"/>
+  			<TextView
+  				android:id="@+id/hskill"
+  				android:layout_height="wrap_content"
+  				android:text ="Skill" 
+  				android:layout_weight="1" 
+  				android:layout_width="0dp"
+  				android:gravity ="center_horizontal"/>
+  			<TextView
+  				android:id="@+id/hlevel"
+  				android:layout_height="wrap_content"
+  				android:text ="Level" 
+  				android:layout_weight="1" 
+  				android:layout_width="0dp"
+  				android:gravity ="center_horizontal"/>
+  			<TextView
+  				android:id="@+id/hxp"
+  				android:layout_height="wrap_content"
+  				android:text ="Total Xp" 
+  				android:layout_weight="1" 
+  				android:layout_width="0dp"
+  				android:gravity ="center_horizontal"/>
+  			<TextView
+  				android:id="@+id/hrank"
+  				android:layout_height="wrap_content"
+  				android:text ="Rank" 
+  				android:layout_weight="1" 
+  				android:layout_width="0dp"
+  				android:gravity ="center_horizontal"/>
+		</TableRow>
+		<LinearLayout
+  			android:layout_height="1dp"
+  			android:layout_width ="fill_parent"
+  			android:background="@color/blue">
+  		</LinearLayout>
+		<!-- AGILITY-->
+		<TableRow
+			android:layout_width="fill_parent"
+   			android:layout_height="wrap_content"  
+   			android:layout_weight="1">
+			<Button
+  				android:id="@+id/agimage"
+  				android:layout_height="wrap_content" 
+  				android:layout_width="wrap_content"
+  				android:background="@drawable/agility"/>
+  			<TextView
+  				android:id="@+id/agskill"
+  				android:layout_height="wrap_content"
+  				android:text ="Skill" 
+  				android:layout_weight="1" 
+  				android:layout_width="0dp"
+  				android:gravity ="center_horizontal"/>
+  			<TextView
+  				android:id="@+id/aglevel"
+  				android:layout_height="wrap_content"
+  				android:text ="Level" 
+  				android:layout_weight="1" 
+  				android:layout_width="0dp"
+  				android:gravity ="center_horizontal"/>
+  			<TextView
+  				android:id="@+id/agxp"
+  				android:layout_height="wrap_content"
+  				android:text ="Total Xp" 
+  				android:layout_weight="1" 
+  				android:layout_width="0dp"
+  				android:gravity ="center_horizontal"/>
+  			<TextView
+  				android:id="@+id/agrank"
+  				android:layout_height="wrap_content"
+  				android:text ="Rank" 
+  				android:layout_weight="1" 
+  				android:layout_width="0dp"
+  				android:gravity ="center_horizontal"/>
+		</TableRow>
+		<LinearLayout
+  			android:layout_height="1dp"
+  			android:layout_width ="fill_parent"
+  			android:background="@color/blue">
+  		</LinearLayout>
+		<!-- THIEVING-->
+		<TableRow
+			android:layout_width="fill_parent"
+   			android:layout_height="wrap_content"  
+   			android:layout_weight="1">
+			<Button
+  				android:id="@+id/agimage"
+  				android:layout_height="wrap_content" 
+  				android:layout_width="wrap_content"
+  				android:background="@drawable/thieving"/>
+  			<TextView
+  				android:id="@+id/tskill"
+  				android:layout_height="wrap_content"
+  				android:text ="Skill" 
+  				android:layout_weight="1" 
+  				android:layout_width="0dp"
+  				android:gravity ="center_horizontal"/>
+  			<TextView
+  				android:id="@+id/tlevel"
+  				android:layout_height="wrap_content"
+  				android:text ="Level" 
+  				android:layout_weight="1" 
+  				android:layout_width="0dp"
+  				android:gravity ="center_horizontal"/>
+  			<TextView
+  				android:id="@+id/txp"
+  				android:layout_height="wrap_content"
+  				android:text ="Total Xp" 
+  				android:layout_weight="1" 
+  				android:layout_width="0dp"
+  				android:gravity ="center_horizontal"/>
+  			<TextView
+  				android:id="@+id/trank"
+  				android:layout_height="wrap_content"
+  				android:text ="Rank" 
+  				android:layout_weight="1" 
+  				android:layout_width="0dp"
+  				android:gravity ="center_horizontal"/>
+		</TableRow>
+		<LinearLayout
+  			android:layout_height="1dp"
+  			android:layout_width ="fill_parent"
+  			android:background="@color/blue">
+  		</LinearLayout>
+		<!-- SLAYER-->
+		<TableRow
+			android:layout_width="fill_parent"
+   			android:layout_height="wrap_content"  
+   			android:layout_weight="1">
+			<Button
+  				android:id="@+id/agimage"
+  				android:layout_height="wrap_content" 
+  				android:layout_width="wrap_content"
+  				android:background="@drawable/slayer"/>
+  			<TextView
+  				android:id="@+id/slskill"
+  				android:layout_height="wrap_content"
+  				android:text ="Skill" 
+  				android:layout_weight="1" 
+  				android:layout_width="0dp"
+  				android:gravity ="center_horizontal"/>
+  			<TextView
+  				android:id="@+id/sllevel"
+  				android:layout_height="wrap_content"
+  				android:text ="Level" 
+  				android:layout_weight="1" 
+  				android:layout_width="0dp"
+  				android:gravity ="center_horizontal"/>
+  			<TextView
+  				android:id="@+id/slxp"
+  				android:layout_height="wrap_content"
+  				android:text ="Total Xp" 
+  				android:layout_weight="1" 
+  				android:layout_width="0dp"
+  				android:gravity ="center_horizontal"/>
+  			<TextView
+  				android:id="@+id/slrank"
+  				android:layout_height="wrap_content"
+  				android:text ="Rank" 
+  				android:layout_weight="1" 
+  				android:layout_width="0dp"
+  				android:gravity ="center_horizontal"/>
+		</TableRow>
+		<LinearLayout
+  			android:layout_height="1dp"
+  			android:layout_width ="fill_parent"
+  			android:background="@color/blue">
+  		</LinearLayout>
+		<!-- FARMING-->
+		<TableRow
+			android:layout_width="fill_parent"
+   			android:layout_height="wrap_content"  
+   			android:layout_weight="1">
+			<Button
+  				android:id="@+id/faimage"
+  				android:layout_height="wrap_content" 
+  				android:layout_width="wrap_content"
+  				android:background="@drawable/farming"/>
+  			<TextView
+  				android:id="@+id/faskill"
+  				android:layout_height="wrap_content"
+  				android:text ="Skill" 
+  				android:layout_weight="1" 
+  				android:layout_width="0dp"
+  				android:gravity ="center_horizontal"/>
+  			<TextView
+  				android:id="@+id/falevel"
+  				android:layout_height="wrap_content"
+  				android:text ="Level" 
+  				android:layout_weight="1" 
+  				android:layout_width="0dp"
+  				android:gravity ="center_horizontal"/>
+  			<TextView
+  				android:id="@+id/faxp"
+  				android:layout_height="wrap_content"
+  				android:text ="Total Xp" 
+  				android:layout_weight="1" 
+  				android:layout_width="0dp"
+  				android:gravity ="center_horizontal"/>
+  			<TextView
+  				android:id="@+id/farank"
+  				android:layout_height="wrap_content"
+  				android:text ="Rank" 
+  				android:layout_weight="1" 
+  				android:layout_width="0dp"
+  				android:gravity ="center_horizontal"/>
+		</TableRow>
+		<LinearLayout
+  			android:layout_height="1dp"
+  			android:layout_width ="fill_parent"
+  			android:background="@color/blue">
+  		</LinearLayout>
+		<!-- RUNECRAFTING-->
+		<TableRow
+			android:layout_width="fill_parent"
+   			android:layout_height="wrap_content"  
+   			android:layout_weight="1">
+			<Button
+  				android:id="@+id/rcimage"
+  				android:layout_height="wrap_content" 
+  				android:layout_width="wrap_content"
+  				android:background="@drawable/runecrafting"/>
+  			<TextView
+  				android:id="@+id/rcskill"
+  				android:layout_height="wrap_content"
+  				android:text ="Skill" 
+  				android:layout_weight="1" 
+  				android:textSize="12dp"
+  				android:layout_width="0dp"
+  				android:gravity ="center_horizontal"/>
+  			<TextView
+  				android:id="@+id/rclevel"
+  				android:layout_height="wrap_content"
+  				android:text ="Level" 
+  				android:layout_weight="1" 
+  				android:layout_width="0dp"
+  				android:gravity ="center_horizontal"/>
+  			<TextView
+  				android:id="@+id/rcxp"
+  				android:layout_height="wrap_content"
+  				android:text ="Total Xp" 
+  				android:layout_weight="1" 
+  				android:layout_width="0dp"
+  				android:gravity ="center_horizontal"/>
+  			<TextView
+  				android:id="@+id/rcrank"
+  				android:layout_height="wrap_content"
+  				android:text ="Rank" 
+  				android:layout_weight="1" 
+  				android:layout_width="0dp"
+  				android:gravity ="center_horizontal"/>
+		</TableRow>
+		<LinearLayout
+  			android:layout_height="1dp"
+  			android:layout_width ="fill_parent"
+  			android:background="@color/blue">
+  		</LinearLayout>
+		<!-- HUNTER-->
+		<TableRow
+			android:layout_width="fill_parent"
+   			android:layout_height="wrap_content"  
+   			android:layout_weight="1">
+			<Button
+  				android:id="@+id/huimage"
+  				android:layout_height="wrap_content" 
+  				android:layout_width="wrap_content"
+  				android:background="@drawable/hunter"/>
+  			<TextView
+  				android:id="@+id/huskill"
+  				android:layout_height="wrap_content"
+  				android:text ="Skill" 
+  				android:layout_weight="1" 
+  				android:layout_width="0dp"
+  				android:gravity ="center_horizontal"/>
+  			<TextView
+  				android:id="@+id/hulevel"
+  				android:layout_height="wrap_content"
+  				android:text ="Level" 
+  				android:layout_weight="1" 
+  				android:layout_width="0dp"
+  				android:gravity ="center_horizontal"/>
+  			<TextView
+  				android:id="@+id/huxp"
+  				android:layout_height="wrap_content"
+  				android:text ="Total Xp" 
+  				android:layout_weight="1" 
+  				android:layout_width="0dp"
+  				android:gravity ="center_horizontal"/>
+  			<TextView
+  				android:id="@+id/hurank"
+  				android:layout_height="wrap_content"
+  				android:text ="Rank" 
+  				android:layout_weight="1" 
+  				android:layout_width="0dp"
+  				android:gravity ="center_horizontal"/>
+		</TableRow>
+		<LinearLayout
+  			android:layout_height="1dp"
+  			android:layout_width ="fill_parent"
+  			android:background="@color/blue">
+  		</LinearLayout>
+		<!-- CONSTRUCTION-->
+			<TableRow
+			android:layout_width="fill_parent"
+   			android:layout_height="wrap_content"  
+   			android:layout_weight="1">
+			<Button
+  				android:id="@+id/ctimage"
+  				android:layout_height="wrap_content" 
+  				android:layout_width="wrap_content"
+  				android:background="@drawable/construction"/>
+  			<TextView
+  				android:id="@+id/ctskill"
+  				android:layout_height="wrap_content"
+  				android:text ="Skill" 
+  				android:layout_weight="1" 
+  				android:layout_width="0dp"
+  				android:textSize="12dp"
+  				android:gravity ="center_horizontal"/>
+  			<TextView
+  				android:id="@+id/ctlevel"
+  				android:layout_height="wrap_content"
+  				android:text ="Level" 
+  				android:layout_weight="1" 
+  				android:layout_width="0dp"
+  				android:gravity ="center_horizontal"/>
+  			<TextView
+  				android:id="@+id/ctxp"
+  				android:layout_height="wrap_content"
+  				android:text ="Total Xp" 
+  				android:layout_weight="1" 
+  				android:layout_width="0dp"
+  				android:gravity ="center_horizontal"/>
+  			<TextView
+  				android:id="@+id/ctrank"
+  				android:layout_height="wrap_content"
+  				android:text ="Rank" 
+  				android:layout_weight="1" 
+  				android:layout_width="0dp"
+  				android:gravity ="center_horizontal"/>
+		</TableRow>
+		<LinearLayout
+  			android:layout_height="1dp"
+  			android:layout_width ="fill_parent"
+  			android:background="@color/blue">
+  		</LinearLayout>
+		<!-- SUMMONING-->
+			<TableRow
+			android:layout_width="fill_parent"
+   			android:layout_height="wrap_content"  
+   			android:layout_weight="1">
+			<Button
+  				android:id="@+id/suimage"
+  				android:layout_height="wrap_content" 
+  				android:layout_width="wrap_content"
+  				android:background="@drawable/summoning"/>
+  			<TextView
+  				android:id="@+id/suskill"
+  				android:layout_height="wrap_content"
+  				android:text ="Skill" 
+  				android:layout_weight="1" 
+  				android:layout_width="0dp"
+  				android:textSize="12dp"
+  				android:gravity ="center_horizontal"/>
+  			<TextView
+  				android:id="@+id/sulevel"
+  				android:layout_height="wrap_content"
+  				android:text ="Level" 
+  				android:layout_weight="1" 
+  				android:layout_width="0dp"
+  				android:gravity ="center_horizontal"/>
+  			<TextView
+  				android:id="@+id/suxp"
+  				android:layout_height="wrap_content"
+  				android:text ="Total Xp" 
+  				android:layout_weight="1" 
+  				android:layout_width="0dp"
+  				android:gravity ="center_horizontal"/>
+  			<TextView
+  				android:id="@+id/surank"
+  				android:layout_height="wrap_content"
+  				android:text ="Rank" 
+  				android:layout_weight="1" 
+  				android:layout_width="0dp"
+  				android:gravity ="center_horizontal"/>
+		</TableRow>
+		<LinearLayout
+  			android:layout_height="1dp"
+  			android:layout_width ="fill_parent"
+  			android:background="@color/blue">
+  		</LinearLayout>
+		<!-- DUNGEONEERING-->
+			<TableRow
+			android:layout_width="fill_parent"
+   			android:layout_height="wrap_content"  
+   			android:layout_weight="1">
+			<Button
+  				android:id="@+id/duimage"
+  				android:layout_height="wrap_content" 
+  				android:layout_width="wrap_content"
+  				android:background="@drawable/dungeon"/>
+  			<TextView
+  				android:id="@+id/duskill"
+  				android:layout_height="wrap_content"
+  				android:text ="Skill" 
+  				android:layout_weight="1" 
+  				android:layout_width="0dp"
+  				android:textSize="11dp"
+  				android:gravity ="center_horizontal"/>
+  			<TextView
+  				android:id="@+id/dulevel"
+  				android:layout_height="wrap_content"
+  				android:text ="Level" 
+  				android:layout_weight="1" 
+  				android:layout_width="0dp"
+  				android:gravity ="center_horizontal"/>
+  			<TextView
+  				android:id="@+id/duxp"
+  				android:layout_height="wrap_content"
+  				android:text ="Total Xp" 
+  				android:layout_weight="1" 
+  				android:layout_width="0dp"
+  				android:gravity ="center_horizontal"/>
+  			<TextView
+  				android:id="@+id/durank"
+  				android:layout_height="wrap_content"
+  				android:text ="Rank" 
+  				android:layout_weight="1" 
+  				android:layout_width="0dp"
+  				android:gravity ="center_horizontal"/>
+		</TableRow>
+		<LinearLayout
+  			android:layout_height="1dp"
+  			android:layout_width ="fill_parent"
+  			android:background="@color/blue">
+  		</LinearLayout>
+	</TableLayout>
+</ScrollView>
+    
+</LinearLayout>

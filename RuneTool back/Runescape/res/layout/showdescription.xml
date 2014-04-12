@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/Black">
+    
+    <LinearLayout
+    	android:orientation="horizontal"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:gravity="center_vertical"
+    	android:background="@drawable/newsbackteal"
+    	android:id="@+id/heading">
+    	<Button
+        	android:id="@+id/newsImage"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:background="@drawable/cooking"
+        	android:layout_marginLeft="2dip"
+        	android:gravity="center_vertical"/>
+    	<TextView
+ 			android:layout_height="wrap_content"
+ 			android:layout_width="fill_parent"
+ 			android:autoLink="all"
+ 			android:text="Title goes here..."
+ 			android:id="@+id/title"
+ 			android:gravity="center_horizontal"
+ 			android:textSize="20dp"
+ 			android:textStyle="bold"
+ 			android:textColor="@color/white"/>
+ 	</LinearLayout>
+ 
+     <ScrollView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center_horizontal">
+    	<LinearLayout
+    		android:orientation="vertical"
+    		android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    		android:background="@color/Black">
+ 	<TextView
+ 		android:layout_marginTop="10dp"
+ 		android:layout_height="wrap_content"
+ 		android:layout_width="fill_parent"
+ 		android:text="Date goes here..."
+ 		android:id="@+id/date"
+ 		android:textSize="15dp"
+ 		android:textStyle="bold"
+ 		android:textColor="@color/white"
+ 		android:gravity="center_horizontal"/>
+ 	<TextView
+ 		android:layout_marginTop="10dp"
+ 		android:layout_height="fill_parent"
+ 		android:layout_width="fill_parent"
+ 		android:textStyle="bold"
+ 		android:text="Description goes here..."
+ 		android:id="@+id/desc"
+ 		android:gravity="center_horizontal"/>
+
+ 	<TextView
+ 		android:layout_marginTop="10dp"
+ 		android:layout_marginBottom="10dp"
+ 		android:layout_height="wrap_content"
+ 		android:layout_width="fill_parent"
+ 		android:text="Link goes here..."
+ 		android:id="@+id/link"
+ 		android:autoLink="web"
+ 		android:gravity="center_horizontal"/>
+ 		
+ 	<TextView
+ 		android:layout_height="wrap_content"
+ 		android:layout_width="fill_parent"
+ 		android:text="Category"
+ 		android:id="@+id/category"
+ 		android:gravity="center_horizontal"/>
+ 	
+ 	<LinearLayout
+ 	android:layout_height="wrap_content"
+ 	android:layout_width="fill_parent"
+ 	android:gravity="center_horizontal"
+ 	android:orientation="vertical">
+ 	<Button
+    	android:layout_marginTop="10dp"
+    	android:layout_width="wrap_content" 
+    	android:layout_height="wrap_content" 
+    	android:text="More Info"
+    	android:textColor="@color/white"
+    	android:layout_marginBottom="10dp"
+    	android:textStyle="bold"
+    	android:id="@+id/moreinfo"
+    	android:background="@drawable/homebuttons"
+    	android:layout_gravity="center_horizontal"/>
+   
+    </LinearLayout>
+    <ScrollView
+    	android:layout_height="150dip"
+ 		android:layout_width="fill_parent"
+ 		android:id="@+id/scroll">
+    	<TextView
+      		android:layout_marginTop="10dp"
+      		android:layout_marginBottom="10dp"
+    		android:layout_height="wrap_content"
+ 			android:layout_width="match_parent"
+ 			android:text="info goes here"
+ 			android:id="@+id/infodetail"
+ 			android:gravity="center_horizontal">
+ 		</TextView>
+    </ScrollView>
+ 	<LinearLayout
+ 	android:layout_height="wrap_content"
+ 	android:layout_width="fill_parent"
+ 	android:gravity="center_horizontal"
+ 	android:orientation="vertical">
+    </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>
